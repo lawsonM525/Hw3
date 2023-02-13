@@ -10,7 +10,7 @@ public class IntAlgorithm {
      * @param n integer to be added
      * @return integer sum of integers from 1 to n
      */
-    public static int sum1ton(int n){
+    public static int sum1toN(int n){
         int sum = 0;
         for(int i=1; i<=n; i++){ //loops through integers from 1 to n and adds each element to sum
             sum += i;
@@ -23,11 +23,11 @@ public class IntAlgorithm {
      * @param n integer to be added
      * @return integer sum of integers from 1 to n
      */
-    public static int sum1tonRec(int n){
+    public static int sum1toNRec(int n){
         if(n == 1){ //base case
             return 1;
         }
-        return sum1tonRec(n-1) + n; //recursive call
+        return sum1toNRec(n-1) + n; //recursive call
     }
 
     /**
@@ -35,7 +35,7 @@ public class IntAlgorithm {
      * @param n integer to be multiplied
      * @return integer product of integers from 1 to n
      */
-    public static int product1ton(int n){
+    public static int product1toN(int n){
         int product = 1;
         for(int i=1; i<=n; i++){ //loops through integers from 1 to n and multiplies each element to product
             product *= i;
@@ -48,11 +48,11 @@ public class IntAlgorithm {
      * @param n integer to be multiplied
      * @return integer product of integers from 1 to n
      */
-    public static int product1tonRec(int n){
+    public static int product1toNRec(int n){
         if(n == 1){ //base case
             return 1;
         }
-        return product1tonRec(n-1) * n; //recursive call
+        return product1toNRec(n-1) * n; //recursive call
     }
 
     /**
