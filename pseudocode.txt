@@ -1,0 +1,63 @@
+// AddAllRec Pseudocode
+input: int[n] array
+output: int sum
+method:
+addAllRec(array[0->n]){// array[0->n] is an array of size n from index 0 to n-1
+    if(array.length==1){return 1}
+    return addAllRec(array[0->n-1])+array[n-1]
+}
+
+// productAllRec Pseudocode
+input: int[n] array
+output: int product
+method:
+productAllRec(array[0->n]){
+    if(array.length==1){return 1}
+    return productAllRec(array[0->n-1])*array[n-1]
+}
+
+// isElementRec Pseudocode
+input: int[n] array, int element
+output: boolean
+method:
+isElementRec(array[0->n], element){
+    if(array.length==1){
+        if(array[0]==element){return true}
+    }
+    if(array[n-1]==element){return true}
+    return isElementRec(array[0->n-1], element)
+}
+
+// findMinRec Pseudocode
+input: int[n] array
+output: int min
+method:
+findMinRec(array[0->n]){
+    if(array.length==1){return array[0]}
+    if(array[n-1]<findMinRec(array[0->n-1])){
+        return array[n-1]
+    }
+    return findMinRec(array[0->n-1])
+}
+
+// findMaxRec Pseudocode
+input: int[n] array
+output: int max
+method:
+findMaxRec(array[0->n]){
+    if(array.length==1){return array[0]}
+    if(array[n-1]>findMaxRec(array[0->n-1])){
+        return array[n-1]
+    }
+    return findMaxRec(array[0->n-1])
+}
+
+// reverseRec Pseudocode
+input: int[n] array
+output: int[n] reversed
+method:
+reverseRec(array[0->n]){
+    if(array.length==1){return array[0]}
+    return [array[n-1], reverseRec(array[0->n-1])] 
+    // returns an array, with the current n positioned as the first element and calling the method for the rest of the array
+}
