@@ -31,6 +31,18 @@ public class CharStack {
     }
 
     /**
+     * Peeks at the top of the stack
+     */
+    public char peek() {
+        if (isEmpty()) {
+            System.out.println("Stack is empty");
+            return ' ';
+        } else {
+            return stack[top];
+        }
+    }
+
+    /**
      * Pushes a character onto the stack
      * @param c character to be pushed onto the stack
      */
@@ -56,6 +68,17 @@ public class CharStack {
             top--;
             return c;
         }
+    }
+
+    /**
+     * Returns stack as a string
+     */
+    public String toString() {
+        String s = "";
+        for (int i = 0; i <= top; i++) {
+            s += stack[i];
+        }
+        return s;
     }
 
 
