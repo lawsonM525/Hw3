@@ -129,6 +129,31 @@ public class ArrayAlgorithmTesters {
         System.out.println("Min of array: " + ArrayAlgorithm.findMinRec(array, array.length));
     }
 
+    /**
+     * tests reverse method
+     */
+    public static void testReverse(){
+        int[] array = {1, 2, 3, 4, 5};
+        System.out.println(" ==== Test reverse() ====");
+        System.out.println("Array: ");
+            
+        printArray(array);
+        System.out.println("Reversed array: ");
+        printArray(ArrayAlgorithm.reverse(array));
+    }
+
+    /**
+     * tests reverseRec method
+     */
+    public static void testReverseRec(){
+        int[] array = {1, 2, 3, 4, 5};
+        System.out.println(" ==== Test reverseRec() ====");
+        System.out.println("Array: ");
+        printArray(array);
+        System.out.println("Reversed array: ");
+        printArray(ArrayAlgorithm.reverseRec(array,0, array.length-1));
+    }
+
     // Main method
     public static void main(String[] args) {
         testAddAll();
@@ -141,5 +166,7 @@ public class ArrayAlgorithmTesters {
         testFindMaxRec();
         testFindMin();
         testFindMinRec();
+        testReverse();
+        testReverseRec();
     }
 }

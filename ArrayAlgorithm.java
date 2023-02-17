@@ -1,6 +1,21 @@
 public class ArrayAlgorithm {
-    //implement recursive function for each of these
-    //test both iterative and recursive functions
+    //Helper functions
+    /**
+     * concatenates two arrays
+     * @param array1 first array
+     * @param array2 second array
+     * @return array with elements of array1 and array2
+     */
+    public static int[] concatArray(int[] array1, int[] array2){
+        int[] array = new int[array1.length + array2.length];
+        for(int i=0; i<array1.length; i++){ //loops through array1 and adds each element to array
+            array[i] = array1[i];
+        }
+        for(int i=0; i<array2.length; i++){ //loops through array2 and adds each element to array
+            array[i+array1.length] = array2[i];
+        }
+        return array;
+    }
 
     /**
      * adds all elements within an array iteratively
@@ -146,6 +161,42 @@ public class ArrayAlgorithm {
             return array[length-1];
         }
         return findMaxRec(array, length-1);
+    }
+
+    /**
+     * reverses an array iteratively
+     * @param array array to be reversed
+     * @return integer array reversed
+     */
+    public static int[] reverse(int[] array){
+        int[] reversed = new int[array.length];
+        for(int i=0; i<array.length; i++){ //loops through array and adds each element to reversed array in reverse order
+            reversed[i] = array[array.length-1-i];
+        }
+        return reversed;
+    }
+    
+    /**
+     * reverses an array recursively
+     * @param array array to be reversed
+     * @param start start of array
+     * @param end end of array
+     * @return integer array reversed
+     */
+    public static int[] reverseRec(int[] array, int start, int end){
+        if(start==end){ //base case
+            return array;
+        }
+        if(end-start==1){ //base case (if array has even number of elements)
+            int temp = array[start];
+            array[start] = array[end];
+            array[end] = temp;
+            return array;
+        }
+        int temp = array[start]; //recursive call
+        array[start] = array[end];
+        array[end] = temp;
+        return reverseRec(array, start+1, end-1);
     }
 
 }
