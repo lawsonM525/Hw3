@@ -1,4 +1,4 @@
-public class ArrayAlgorithm {
+public class ArrayAlgorithms {
     //Helper functions
     /**
      * concatenates two arrays

@@ -1,4 +1,4 @@
-public class IntAlgorithm {
+public class IntAlgorithms {
     //sum1ton
     //product1ton
     //euclidean algorithm (gcd)

@@ -1,4 +1,4 @@
-public class ArrayAlgorithmTesters {
+public class ArrayAlgorithmsTesters {
     //Helper functions
     /**
      * prints an array
@@ -25,7 +25,7 @@ public class ArrayAlgorithmTesters {
         System.out.println(" ==== Test addAll() ====");
         System.out.println("Array: ");
         printArray(array);
-        System.out.println("Sum of array: " + ArrayAlgorithm.addAll(array));
+        System.out.println("Sum of array: " + ArrayAlgorithms.addAll(array));
     }
 
     /**
@@ -36,7 +36,7 @@ public class ArrayAlgorithmTesters {
         System.out.println(" ==== Test addAllRec() ====");
         System.out.println("Array: ");
         printArray(array);
-        System.out.println("Sum of array: " + ArrayAlgorithm.addAllRec(array));
+        System.out.println("Sum of array: " + ArrayAlgorithms.addAllRec(array));
     }
 
     /**
@@ -47,7 +47,7 @@ public class ArrayAlgorithmTesters {
         System.out.println(" ==== Test multiplyAll() ====");
         System.out.println("Array: ");
         printArray(array);
-        System.out.println("Product of array: " + ArrayAlgorithm.multiplyAll(array));
+        System.out.println("Product of array: " + ArrayAlgorithms.multiplyAll(array));
     }
 
     /**
@@ -58,7 +58,7 @@ public class ArrayAlgorithmTesters {
         System.out.println(" ==== Test multiplyAllRec() ====");
         System.out.println("Array: ");
         printArray(array);
-        System.out.println("Product of array: " + ArrayAlgorithm.multiplyAllRec(array));
+        System.out.println("Product of array: " + ArrayAlgorithms.multiplyAllRec(array));
     }
 
     /**
@@ -69,8 +69,8 @@ public class ArrayAlgorithmTesters {
         System.out.println(" ==== Test isElement() ====");
         System.out.println("Array: ");
         printArray(array);
-        System.out.println("Is 3 in array? " + ArrayAlgorithm.isElement(array, 3));
-        System.out.println("Is 6 in array? " + ArrayAlgorithm.isElement(array, 6));
+        System.out.println("Is 3 in array? " + ArrayAlgorithms.isElement(array, 3));
+        System.out.println("Is 6 in array? " + ArrayAlgorithms.isElement(array, 6));
     }
 
     /**
@@ -81,8 +81,8 @@ public class ArrayAlgorithmTesters {
         System.out.println(" ==== Test isElementRec() ====");
         System.out.println("Array: ");
         printArray(array);
-        System.out.println("Is 3 in array? " + ArrayAlgorithm.isElementRec(array, 3));
-        System.out.println("Is 6 in array? " + ArrayAlgorithm.isElementRec(array, 6));
+        System.out.println("Is 3 in array? " + ArrayAlgorithms.isElementRec(array, 3));
+        System.out.println("Is 6 in array? " + ArrayAlgorithms.isElementRec(array, 6));
     }
 
     /**
@@ -93,7 +93,7 @@ public class ArrayAlgorithmTesters {
         System.out.println(" ==== Test findMax() ====");
         System.out.println("Array: ");
         printArray(array);
-        System.out.println("Max of array: " + ArrayAlgorithm.findMax(array));
+        System.out.println("Max of array: " + ArrayAlgorithms.findMax(array));
     }
 
     /**
@@ -104,7 +104,7 @@ public class ArrayAlgorithmTesters {
         System.out.println(" ==== Test findMaxRec() ====");
         System.out.println("Array: ");
         printArray(array);
-        System.out.println("Max of array: " + ArrayAlgorithm.findMaxRec(array));
+        System.out.println("Max of array: " + ArrayAlgorithms.findMaxRec(array));
     }
 
     /**
@@ -115,7 +115,7 @@ public class ArrayAlgorithmTesters {
         System.out.println(" ==== Test findMin() ====");
         System.out.println("Array: ");
         printArray(array);
-        System.out.println("Min of array: " + ArrayAlgorithm.findMin(array));
+        System.out.println("Min of array: " + ArrayAlgorithms.findMin(array));
     }
 
     /**
@@ -126,7 +126,7 @@ public class ArrayAlgorithmTesters {
         System.out.println(" ==== Test findMinRec() ====");
         System.out.println("Array: ");
         printArray(array);
-        System.out.println("Min of array: " + ArrayAlgorithm.findMinRec(array));
+        System.out.println("Min of array: " + ArrayAlgorithms.findMinRec(array));
     }
 
     /**
@@ -139,7 +139,7 @@ public class ArrayAlgorithmTesters {
             
         printArray(array);
         System.out.println("Reversed array: ");
-        printArray(ArrayAlgorithm.reverse(array));
+        printArray(ArrayAlgorithms.reverse(array));
     }
 
     /**
@@ -151,7 +151,7 @@ public class ArrayAlgorithmTesters {
         System.out.println("Array: ");
         printArray(array);
         System.out.println("Reversed array: ");
-        printArray(ArrayAlgorithm.reverseRec(array));
+        printArray(ArrayAlgorithms.reverseRec(array));
     }
 
     // Main method

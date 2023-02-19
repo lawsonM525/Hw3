@@ -1,4 +1,4 @@
-public class IntAlgorithmTesters {
+public class IntAlgorithmsTesters {
     // Helper Functions
     /**
      * prints an array
@@ -21,7 +21,7 @@ public class IntAlgorithmTesters {
      */
     public static void testSum1toN(){
         System.out.println(" ==== Test sum1toN() ====");
-        System.out.println("Sum of 1 to 5: " + IntAlgorithm.sum1toN(5));
+        System.out.println("Sum of 1 to 5: " + IntAlgorithms.sum1toN(5));
     }
 
     /**
@@ -29,7 +29,7 @@ public class IntAlgorithmTesters {
      */
     public static void testSum1toNRec(){
         System.out.println(" ==== Test sum1toNRec() ====");
-        System.out.println("Sum of 1 to 5: " + IntAlgorithm.sum1toNRec(5));
+        System.out.println("Sum of 1 to 5: " + IntAlgorithms.sum1toNRec(5));
     }
 
     /**
@@ -37,7 +37,7 @@ public class IntAlgorithmTesters {
      */
     public static void testProduct1toN(){
         System.out.println(" ==== Test product1toN() ====");
-        System.out.println("Product of 1 to 5: " + IntAlgorithm.product1toN(5));
+        System.out.println("Product of 1 to 5: " + IntAlgorithms.product1toN(5));
     }
 
     /**
@@ -45,7 +45,7 @@ public class IntAlgorithmTesters {
      */
     public static void testProduct1toNRec(){
         System.out.println(" ==== Test product1toNRec() ====");
-        System.out.println("Product of 1 to 5: " + IntAlgorithm.product1toNRec(5));
+        System.out.println("Product of 1 to 5: " + IntAlgorithms.product1toNRec(5));
     }
 
     /**
@@ -53,7 +53,7 @@ public class IntAlgorithmTesters {
      */
     public static void testGcd(){
         System.out.println(" ==== Test gcd() ====");
-        System.out.println("GCD of 12 and 18: " + IntAlgorithm.gcd(12, 18));
+        System.out.println("GCD of 12 and 18: " + IntAlgorithms.gcd(12, 18));
     }
 
     /**
@@ -61,7 +61,7 @@ public class IntAlgorithmTesters {
      */
     public static void testGcdRec(){
         System.out.println(" ==== Test gcdRec() ====");
-        System.out.println("GCD of 12 and 18: " + IntAlgorithm.gcdRec(12, 18));
+        System.out.println("GCD of 12 and 18: " + IntAlgorithms.gcdRec(12, 18));
     }
 
     //Main method
