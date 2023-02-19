@@ -44,6 +44,15 @@ public class ArrayAlgorithm {
     }
 
     /**
+     * Wrapper method for addAllRec
+     * @param array array with elements to be added
+     * @return integer sum of elements
+     */
+    public static int addAllRec(int[] array){ //overloading addAllRec method so it can be called the same way
+        return addAllRec(array, array.length);
+    }
+
+    /**
      * multiplies all elements within an array iteratively
      * @param array array with elements to be multiplied
      * @return integer product of elements
@@ -67,6 +76,15 @@ public class ArrayAlgorithm {
             return 1;
         }
         return multiplyAllRec(array, length-1) * array[length-1]; //recursive call
+    }
+
+    /**
+     * Wrapper method for multiplyAllRec
+     * @param array array with elements to be multiplied
+     * @return integer product of elements
+     */
+    public static int multiplyAllRec(int[] array){ //overloading multiplyAllRec method so it can be called the same way
+        return multiplyAllRec(array, array.length);
     }
 
     /**
@@ -102,6 +120,16 @@ public class ArrayAlgorithm {
     }
 
     /**
+     * Wrapper method for isElementRec
+     * @param array array to be checked
+     * @param value value we are looking for
+     * @return boolean true if value is in array, false if not
+     */
+    public static boolean isElementRec(int[] array, int value){ //overloading isElementRec method so it can be called the same way
+        return isElementRec(array, value, array.length);
+    }
+
+    /**
      * finds the smallest element in an array iteratively
      * @param array array to be checked
      * @return integer smallest element in array
@@ -133,6 +161,15 @@ public class ArrayAlgorithm {
     }
 
     /**
+     * Wrapper method for findMinRec
+     * @param array array to be checked
+     * @return integer smallest element in array
+     */
+    public static int findMinRec(int[] array){//overloading findMinRec method
+        return findMinRec(array, array.length);
+    }
+
+    /**
      * finds the largest element in an array iteratively
      * @param array array to be checked
      * @return integer largest element in array
@@ -161,6 +198,15 @@ public class ArrayAlgorithm {
             return array[length-1];
         }
         return findMaxRec(array, length-1);
+    }
+
+    /**
+     * Wrapper method for findMaxRec
+     * @param array array to be checked
+     * @return integer largest element in array
+     */
+    public static int findMaxRec(int[] array){//overloading findMaxRec method
+        return findMaxRec(array, array.length);
     }
 
     /**
@@ -197,6 +243,15 @@ public class ArrayAlgorithm {
         array[start] = array[end];
         array[end] = temp;
         return reverseRec(array, start+1, end-1);
+    }
+
+    /**
+     * Wrapper method for reverseRec
+     * @param array array to be reversed
+     * @return integer array reversed
+     */
+    public static int[] reverseRec(int[] array){ // same name so that we can call it the same way as reverse (overloading)
+        return reverseRec(array, 0, array.length-1);
     }
 
 }

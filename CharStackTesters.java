@@ -95,6 +95,10 @@ public class CharStackTesters {
         testPush();
         System.out.println();
         testPop();
+        System.out.println();
+        testPeek();
+        System.out.println();
+        System.out.println(" ==== Ending Tests ====");
     }
     
 }
