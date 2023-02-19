@@ -23,11 +23,27 @@ public class CharStack {
     }
 
     /**
+     * Wrapper method for isEmpty()
+     * @return true if the stack is empty, false otherwise
+     */
+    public boolean isEmptyW(){
+        return isEmpty();
+    }
+
+    /**
      * Checks if the stack is full
      * @return true if the stack is full, false otherwise
      */
     public boolean isFull() {
         return (top == size - 1);
+    }
+
+    /**
+     * Wrapper method for isFull()
+     * @return true if the stack is full, false otherwise
+     */
+    public boolean isFullW(){
+        return isFull();
     }
 
     /**
@@ -43,6 +59,14 @@ public class CharStack {
     }
 
     /**
+     * Wrapper method for peek()
+     * @return character at the top of the stack
+     */
+    public char peekW(){
+        return peek();
+    }
+
+    /**
      * Pushes a character onto the stack
      * @param c character to be pushed onto the stack
      */
@@ -53,6 +77,14 @@ public class CharStack {
             top++;
             stack[top] = c;
         }
+    }
+
+    /**
+     * Wrapper method for push()
+     * @param c character to be pushed onto the stack
+     */
+    public void pushW(char c){
+        push(c);
     }
 
     /**
@@ -71,6 +103,14 @@ public class CharStack {
     }
 
     /**
+     * Wrapper method for pop()
+     * @return character popped off the stack
+     */
+    public char popW(){
+        return pop();
+    }
+
+    /**
      * Returns stack as a string
      */
     public String toString() {
@@ -79,6 +119,14 @@ public class CharStack {
             s += stack[i];
         }
         return s;
+    }
+
+    /**
+     * Wrapper method for toString()
+     * @return stack as a string
+     */
+    public String toStringW(){
+        return toString();
     }
 
 
